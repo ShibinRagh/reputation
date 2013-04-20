@@ -1,0 +1,204 @@
+//
+// Responsive: Large desktop and up
+// --------------------------------------------------
+
+
+@media (min-width: 1200px) {
+
+  // Fixed grid
+  #grid > .core(@gridColumnWidth1200, @gridGutterWidth1200);
+
+  // Fluid grid
+  #grid > .fluid(@fluidGridColumnWidth1200, @fluidGridGutterWidth1200);
+
+  // Input grid
+  #grid > .input(@gridColumnWidth1200, @gridGutterWidth1200);
+
+  // Thumbnails
+  .thumbnails {
+    margin-left: -@gridGutterWidth1200;
+  }
+  .thumbnails > li {
+    margin-left: @gridGutterWidth1200;
+  }
+  .row-fluid .thumbnails {
+    margin-left: 0;
+  }
+
+
+/*============================================================================
+   tab Start
+========================================================================*/
+ 
+.padd-adgest{
+	padding:15px 30px;
+	.clearfix;
+}
+.project-tab{
+	width:340px;
+}
+.reputation-tab{
+	width:280px;
+}
+.change-tab{
+	width:320px;
+}
+.running-tab{
+	width:165px;
+}
+.reputation-tab .tab-content span, .change-tab span, .running-tab span {
+	font-size:25px;
+}
+.project-tab .tab-content span{
+	font-size:27px;
+}
+.right-fullwidth{
+	width:526px;
+}
+.primary-btn-wrap {
+	margin-top:-8px;
+	 button{
+		width:130px;
+		text-align:center;
+		display:block;
+		float:right;
+		margin-bottom:5px;
+		clear:both;
+	}
+}
+
+
+
+/*============================================================================
+    Project detail page single Start
+========================================================================*/
+.project-listing .project-detail-single{
+	.change-tab{
+		width:325px;
+ 	}
+	.running-tab{
+		width:144px;
+			.tab-content span{
+			  	text-align:center;
+				display:block;
+		 	}
+	}
+	.reputation-tab{
+		width:293px;
+ 	}
+
+}
+
+/*================== bottom section Start ==============*/
+.new-keyword-listing .project-detail-single{
+ 	.reputation-tab{
+		width:240px;
+	}
+} 
+/*================== bottom section End ==============*/
+
+/*============================================================================
+    Project detail page single End
+========================================================================*/
+
+
+/*============================================================================
+    Project detail tab Start - Keyword page
+========================================================================*/
+.project-listing .single-full-detail{
+	.project-tab{
+		width:500px;
+	}
+	.reputation-tab{
+		width:407px;
+	}
+	.change-tab{
+		width:200px;
+ 	}
+}   
+ 
+/*============================================================================
+    Project detail tab End Keyword page
+========================================================================*/
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/*============================================================================
+    number-tab  tab Start  (asset-listing)
+========================================================================*/
+.number-tab{
+	width:150px;
+		.number{
+			font-size:65px;
+ 			padding-top:33px;
+			line-height:60px;
+			width:70px;
+			margin:0 auto;
+		}
+}
+/*============================================================================
+    number-tab tab End  (asset-listing)
+========================================================================*/
+
+
+
+/*============================================================================
+    content-asset  tab Start  (asset-listing)
+========================================================================*/
+.content-asset-tab{
+	width:660px;
+	padding-left:30px;
+	 P{
+		width:590px;
+	}
+}
+ 
+/*============================================================================
+    content-asset  tab End  (asset-listing)
+========================================================================*/
+
+
+
+/*============================================================================
+    button-tab  tab Start  (asset-listing)
+========================================================================*/
+.button-tab{
+	width:200px;
+ 	 .btn-large{
+		width:200px;  
+	 }
+}
+ 
+/*============================================================================
+     button-tab  tab Start   (asset-listing)
+========================================================================*/
+
+
+
+
+/*============================================================================
+ Home page Start
+==============================================================================*/
+
+/*====================== 
+ Home Video Panel Start
+================== */
+.video-panel{
+	height:330px;
+	.sign-up-form{
+			padding-right:36px;
+	}
+}
+/*====================== 
+ Home Video Panel Start
+================== */
+
+/*============================================================================
+ Home page End
+==============================================================================*/
+
+}

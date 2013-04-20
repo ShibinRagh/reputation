@@ -1,0 +1,1046 @@
+/*!
+ * Bootstrap v2.3.1
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+// Core variables and mixins
+@import "variables.less"; // Modify this for custom colors, font-sizes, etc
+@import "mixins.less";
+
+// CSS Reset
+@import "reset.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+@import "layouts.less";
+
+// Base CSS
+@import "type.less";
+//@import "code.less";
+//@import "forms.less";
+//@import "tables.less";
+
+// Components: common
+//@import "sprites.less";
+@import "dropdowns.less";
+//@import "wells.less";
+//@import "component-animations.less";
+//@import "close.less";
+
+// Components: Buttons & Alerts
+//@import "buttons.less";
+//@import "button-groups.less";
+//@import "alerts.less"; // Note: alerts share common CSS with buttons and thus have styles in buttons.less
+
+// Components: Nav
+//@import "navs.less";
+//@import "navbar.less";
+//@import "breadcrumbs.less";
+//@import "pagination.less";
+//@import "pager.less";
+
+// Components: Popovers
+//@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
+
+// Components: Misc
+//@import "thumbnails.less";
+//@import "media.less";
+//@import "labels-badges.less";
+//@import "progress-bars.less";
+//@import "accordion.less";
+//@import "carousel.less";
+//@import "hero-unit.less";
+
+// Utility classes
+@import "utilities.less"; // Has to be last to override when necessary
+
+
+/*============================================================================
+ Sprite  Css
+==============================================================================*/
+.sprite, .logo a, .btn-back, .btn-cancel, .logo-home a, .icon-username, .icon-password, .icon-c-password, .home-steps li, .icon-top{
+	background:url(../img/sprite.png) no-repeat;
+}
+/*============================================================================
+ Icon  Css
+==============================================================================*/
+.btn-back{
+	width:14px;
+	height:11px;
+	background-position:0 -24px;
+	display:inline-block;
+}
+.btn-cancel{
+	width:12px;
+	height:13px;
+	background-position:-15px -24px;
+	display:inline-block;
+}
+.icon-username{
+	width:16px;
+	height:16px;
+	background-position:-27px -24px;
+	display:inline-block;
+}
+.icon-password{
+	width:14px;
+	height:20px;
+	background-position:-43px -24px;
+	display:inline-block;
+}
+.icon-c-password{
+	width:14px;
+	height:20px;
+	background-position:-57px -24px;
+	display:inline-block;
+}
+.icon-top{
+	width:58px;
+	height:58px;
+	background-position:-50px -44px;
+	display:inline-block;
+}
+/*============================================================================
+ Button  Css
+==============================================================================*/
+button{
+	border:none;
+	font-family: @baseFontFamily;
+}
+button img{
+	margin:-3px 10px 0 0;
+}
+.btn-primary, .btn-large, .btn-medium, .btn-sign{
+	color:#fff;
+	text-align:center;
+	.border-radius(2px);	
+}
+.btn-sign{
+	font-weight:500;
+	font-size:14px;
+	padding:5px 10px 6px;
+}
+.btn-primary{
+	font-weight:400;
+	font-size:12px;
+	padding:5px 10px 6px;
+}
+.btn-medium{
+	font-weight:400;
+	font-size:13px;
+	padding:5px 14px;
+	line-height:16px;
+}
+.btn-large{
+	font-weight:500;
+	font-size:17px;
+	padding:3px 18px;
+	height:40px;
+}
+.red{
+	background:#c2604a;
+}
+.red:hover{
+	background:#b44b34;
+}
+.green{
+	background:#95aa35;
+}
+.green:hover{
+	background:#849920;
+}
+.yellow{
+	background:#e0aa36;
+}
+.yellow:hover{
+	background:#d59b20;
+}
+.gray-dark{
+	background:#6c6360;
+}
+.gray-dark:hover{
+	background:#463d3a;
+}
+.light-green{
+	background:#8ca320;
+}
+.light-green:hover{
+	background:#94ae1b;
+}
+/*============================================================================
+ Button  End
+==============================================================================*/	
+
+
+/*============================================================================
+ Form  Start
+==============================================================================*/
+input{
+	background:none;
+	border:none;
+	.placeholder();
+	color:#fff;
+	font-family: @baseFontFamily;
+	font-weight:400;
+}
+/*============================================================================
+ Form  End
+==============================================================================*/
+
+/*============================================================================
+ Header Css
+=============================================================================*/
+.main-header{
+	background:#322c2a;
+	border-bottom:1px solid #c8c2c0;
+	height:60px;
+}
+.logo{
+	float:left;
+	margin:10px 0;
+		a{
+		display:block;
+		background-position:;
+		width:209px;
+		height:23px;
+		text-indent:-999px;
+	  } 
+} 
+.welcome-user{
+	width:30%;
+		p{
+			color:#fff;
+			font-size:15px;
+			font-weight:500;
+			padding:19px 0 0;
+				span{
+					font-weight:300; padding-right:5px;
+				}
+		}
+}
+.project-select{
+	margin-top:13px;
+	background:#4f4845;
+	.border-radius(3px);
+	float:left;
+	padding:8px 15px;
+	display:inline-block;
+	font-size:15px;
+		.caret{
+			border-bottom-color:#fff;
+			border-top-color:#fff;
+			margin-left:25px;
+		}
+}
+.main-header .pull-right > .dropdown-menu{
+	left:0;
+	right:auto;
+}
+.dropdown-menu li a:hover{
+	background:#4f4845;
+	color:#fff;
+}
+
+
+
+/*============================================================================
+ Header Css End
+=============================================================================*/
+
+/*============================================================================
+Header  Dropdown Start
+=============================================================================*/
+ header .dropdown-menu-select{
+	background:#4f4845;
+	.border-radius(0 3px 3px 3px);
+	.box-shadow(0 1px 0 0 rgba(0, 0, 0, 0.11) );
+	top:45px;
+	border:none;
+		li a{
+			font-size:13px;
+			color:#fff;
+			 	&:hover{
+					background:#322c2a;
+				}
+		}
+}
+
+/*============================================================================
+ Header Dropdown End
+=============================================================================*/ 
+
+
+/*============================================================================
+   History drop-down Start
+========================================================================*/
+.change-tab .dropdown{
+	margin:8px 0 0 28px;
+}
+.dropdown-history{
+	background:#eceae6;
+	color:#6c6360;
+	font-size:13px;
+	padding:6px 13px;
+	.border-radius(2px);
+		.caret{
+			border-top-color:#6c6360;
+		}
+}
+
+.dropdown-menu-history {
+	background:#eceae6;
+	.border-radius(0 3px 3px 3px);
+	.box-shadow(0 1px 0 0 rgba(0, 0, 0, 0.11) );
+	top:21px;
+	border:none;
+		li a{
+			font-size:12px;
+			color:#6C6360;
+			 	&:hover{
+					background:#322c2a;
+				}
+		}
+}
+/*============================================================================
+   History drop-down End
+========================================================================*/
+
+/*============================================================================
+    Dropdown number-tab  Start
+========================================================================*/
+.dropdown-number{
+	  margin:0 0 0 37px;
+		  .dropdown-number-toggle{
+			  color:#6c6360;
+			  background:none;
+			  padding-left:9px;
+			  font-size:13px;
+				  .caret{
+					  margin:11px 0 0 6px;
+					  border-top-color:#6c6360;
+				  }
+ 	   }
+ 	   .dropdown-number-ul{
+		   	.border-radius(0 3px 3px 3px);
+			.box-shadow(0 1px 0 0 rgba(0, 0, 0, 0.11) );
+			top:21px;
+			border:none;
+				li a{
+					font-size:12px;
+					color:#6C6360;
+			 			&:hover{
+							background:#322c2a;
+							color:#fff;
+						}
+				}
+		}
+
+}
+/*============================================================================
+    Dropdown number-tab  End
+========================================================================*/
+
+.content-area{
+ }
+.content-head{
+	border-bottom:2px solid #e6e4e2;
+	margin-bottom:50px;
+	padding:40px 0 0px;
+		.pull-right{
+			margin-top:8px;
+		}
+		h2{
+			padding-bottom:8px;
+			a{
+				color:#778d0c;
+				font-weight:bold;
+				padding-left:5px;
+					&:hover{
+						text-decoration:underline;
+					}
+			}
+		}
+	.back-link{
+		color:#6c6360;
+		font-size:15px;
+		margin-top:12px;
+		display:block;
+			i{
+				margin:5px 8px 0 0;
+				float:left;
+			}
+			&:hover .btn-cancel{
+				background-position:-15px -37px;
+			}
+			&:hover .btn-back{
+				background-position:0 -37px;
+			}
+	}
+ 
+} 
+.content-head-plan-page{ 
+	h2{
+		padding-bottom:0;
+		margin-bottom:0;
+	}
+	p{
+		padding-bottom:10px;
+		font-weight:300;
+		color:#4a4442;
+	}
+}
+
+/*============================================================================
+   tab Start
+==============================================================================*/
+.project-box-row.active-row{
+	border:2px solid #e0aa36;
+}
+.project-box-row.bg-negative{
+	background:#f4d6d0;
+}
+.project-box-row.bg-neutral{
+	background:#f3e5b5;
+}
+.project-box-row.bg-positve{
+	background:#e6edc6;
+}
+
+.project-box-row{
+	border:1px solid #e6e4e0;
+	.border-radius(3px);
+	background:#fff;
+	.box-shadow( inset 0 -1px 0 rgba(0,0,0,0.2)  );
+	margin-bottom:10px;
+}
+.project-detail-single{
+	padding-bottom:40px;
+	 h3{
+			padding-bottom:10px;
+			 
+	 }
+}	
+.tab{
+	float:left;
+		h4{
+		border-bottom:1px solid #eeeded;
+		padding-bottom:10px;
+	}
+}
+.project-tab .tab-content{
+	a{
+		color:#778d0c;
+		/*font-weight:bold;*/
+			&:hover{
+				text-decoration:underline;
+			}
+	}
+ 	font-size:25px;
+		.btn-primary{
+			margin-top:4px;
+		}
+		span{
+			display:block !important;
+		}
+		.btn-wrap{
+			padding-bottom:10px;
+		}
+}
+.reputation-tab .tab-content span, .change-tab span, .running-tab span, .project-tab .tab-content span {
+ 	color:#322c2a;
+ 	font-weight:500;
+ 	padding-bottom:7px;
+	display:inline-block;
+}
+.reputation-tab .tab-content p{
+	color:#b6462c;
+	font-size:13px;
+}
+ .tab-content{
+	 padding:16px 0 0;
+	 	span img{
+	 		margin:-2px 5px 0 0;
+		}
+		.img-small{
+			margin-left:8px;
+		}
+}
+
+/*============================================================================
+  new-keyword-listing  tab - Product Detail page
+==============================================================================*/
+ 
+ .new-keyword-listing .project-detail-single  .tab-content span,  .new-keyword-listing .project-detail-single  .project-tab .tab-content a{
+	font-size:19px;
+}
+
+/*============================================================================
+   new-keyword-listing tab Product Detail page -  End
+==============================================================================*/
+
+ 
+/*============================================================================
+  Project Detail tab Start
+==============================================================================*/
+ .single-full-detail .project-tab .tab-content{
+	color:#322c2a;
+}
+/*============================================================================
+   Project Detail tab End
+==============================================================================*/
+
+
+/*============================================================================
+    number-tab  Start  (asset-listing)
+========================================================================*/
+.number-tab{
+ 		   .number{
+			font-weight:bold;
+			color:#4a4442;
+			text-align:center;
+					figure{
+						width:22px;
+ 						line-height:20px;
+						margin:0;
+						float:right;
+						padding-top:15px;
+							img{
+								float:left;
+							}
+  							small{
+								font-size:15px;
+								color:#6c6766;
+								line-height:20px;
+								float:left;
+								font-weight:normal;
+								font-weight:300;
+							}
+					}
+  		 }
+		
+ 		
+}
+
+/*============================================================================
+    number-tab  End  (asset-listing)
+========================================================================*/
+
+
+
+
+/*============================================================================
+    content-asset  Start  (asset-listing)
+========================================================================*/
+.asset-listing {
+	h3{
+		padding-bottom:10px;
+
+ 	}
+	.project-box-row{
+		.box-shadow(none);
+	}
+}
+.content-asset-tab{
+	padding-left:10px;
+	   h5{
+		  font-size:19px;
+		  padding-bottom:9px;
+		  	a{
+				font-size:19px;
+				color:#322c2a;
+				display:inline;
+				border-bottom:1px solid #cccaca;
+					&:hover{
+						border-bottom:0;
+					}
+			}
+			.btn-primary{
+				float:right;
+					img{
+						margin-top:-2px;
+						margin-right:8px;
+						display:none;
+					}
+			}
+			.btn-primary.active img{
+				display:inline;
+			}
+	   }
+	  P{
+		color:#4a4442;
+		font-size:15px;
+		font-weight:300;
+		margin-bottom:5px;
+	   }
+	   >a{
+		   color:#778d0c;
+		   font-size:13px;
+		   	 &:hover{
+				 text-decoration:underline;
+			 }
+		 }
+	  
+}
+ 
+/*============================================================================
+    content-asset  End  (asset-listing)
+========================================================================*/
+ 
+ 
+ 
+/*============================================================================
+    button-tab  tab Start  (asset-listing)
+========================================================================*/
+.button-tab{
+	float:right;
+	.btn-large{
+		clear:both;
+		display:block;  
+	}
+	.margin-adgest{
+		margin:8px 0;
+	}
+	button {
+		position:relative;
+		img{
+			position:absolute;
+			left:22px;
+			top:17px;
+			display:none;
+		}
+ 	}
+	button.active img{
+			display:inline;
+	}
+}
+ 
+
+/*============================================================================
+     button-tab  tab Start   (asset-listing)
+========================================================================*/
+
+
+ /*============================================================================
+    tab End
+==============================================================================*/
+
+
+ /*============================================================================
+    Plans
+==============================================================================*/
+.select-plans{
+	padding:90px 0 90px 275px;
+	.clearfix();
+	a{
+		width:300px;
+		height:250px;
+		border-bottom:4px solid rgba(0,0,0,0.5);
+		display:block;
+		float:left;
+		.border-radius(3px);
+ 		 	span{
+				padding-top:190px;
+				display:block;
+				font-size:30px;
+				text-align:center;
+				font-weight:500;
+			}
+	}
+	a.personal-plan{
+		background:#4ea4c4 url(../img/icon-personal-plan.png) no-repeat center 60px;
+		margin-right:80px;
+			&:hover{
+				background-color:#59b7da;
+			}
+	}
+	a.business-plan{
+		background:#95aa35 url(../img/icon-business-plan.png) no-repeat center 62px;
+		&:hover{
+				background-color:#a6bd3b;
+			}
+	}
+}
+ /*============================================================================
+    Plans
+==============================================================================*/
+
+
+/*============================================================================
+   Footer
+==============================================================================*/
+footer{
+	margin-top:40px;
+	padding-bottom:50px;
+		.container{
+			border-top:1px solid #e2e0de;
+				p{
+					color:#a6a09e;
+					font-size:13px;
+					font-weight:300;
+					margin-top:15px;
+				}
+		}
+}
+/*============================================================================
+   Footer End
+==============================================================================*/
+
+
+
+/*============================================================================
+ Home page Start
+==============================================================================*/
+.home-page{}
+.home-top-area{
+	background:url(../img/bg-home-top-area.jpg) no-repeat center 0;
+	min-height:650px
+ }
+
+/*================= 
+ Home header Start
+================== */
+.header-home{
+	background:url(../img/bg-header-home.png);
+	height:90px;
+	padding:0 40px;
+ 		.logo-home{
+			width:240px;
+			height:27px;
+			float:left;
+				a{
+					display:block;
+					height:27px;
+					background-position:-208px 0;
+					text-indent:-9999px;
+					margin-top:32px;
+				}
+		}
+		nav ul{
+			float:left;
+			margin:33px 40px 0 0;
+				  li{
+					float:left;
+					margin:0 10px;
+						a{
+							font-size:14px;
+							color:#776f6c;
+							font-weight:500;
+								&:hover{
+									color:#423e3c;
+								}
+						}
+						.active{
+							color:#423e3c;
+						}
+				}
+		}
+		.btn-sign{
+			margin:27px 0 0 0;
+		}
+}
+/*================= 
+ Home header End
+================== */
+
+
+/*====================== 
+ Home home-caption Start
+================== */
+.home-caption{
+	height:160px;
+	hgroup{
+		text-align:center;
+		padding-top:31px;
+		h2{
+			color:#fff;
+			font-size:45px;
+			text-shadow:0 1px 1px rgba(0,0,0,0.31);
+			font-weight:500; 
+		}
+		h4{
+			color:#fff;
+			font-size:21px;
+ 			.opacity(60);
+		}
+	}
+}
+/*====================== 
+ Home home-caption End
+================== */
+
+
+/*====================== 
+ Home Video Panel Start
+================== */
+
+.video-container {
+	height:330px;
+	overflow: hidden;
+	position:relative;
+	margin-left:15px;
+ }
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-panel{
+	background:#1c1817;
+	padding:15px 0;
+	.video-box{
+		padding:10px;
+			img{
+				width:100%;
+				height:330px;
+			}
+	}
+ 	.sign-up-form{
+		padding-top:25px;
+		h3{
+			font-size:23px;
+			color:#fff;
+			font-weight:500;
+			padding-bottom:10px;
+		}
+		ul{
+			li{
+				.clearfix();
+				background:#393433;
+				padding:10px;
+				margin-bottom:7px;
+				input{
+					margin:0 0 0 10px;
+					float:left;
+				}
+				i{
+					float:left;
+				}
+				.icon-username{
+					margin-top:2px;
+				}
+			}
+		}
+		button{
+			width:100%;
+			height:46px;
+			margin-top:15px;
+		}
+	}
+}
+
+/*====================== 
+ Home Video Panel Start
+================== */
+
+
+
+/*==========================
+  home-primary-content Start
+============================*/
+.home-content-area{
+	background:#fff;
+	padding-bottom:70px;
+}
+.home-primary-content{
+	padding:50px 5% 10px;
+	text-align:center;
+		h3{
+			font-weight:500;
+			font-size:35px;
+		}
+		p{
+			font-size:17px;
+			font-weight:300;
+			color:#5e5755;
+			line-height:27px;
+		}
+} 
+
+/*=======================
+ home-steps Start
+========================= */
+.home-steps{
+	.step-numbers{
+		width:68%;
+		border-top:2px solid #cccaca;
+		position:relative;
+		margin:55px auto;
+			li{
+				width:50px;
+				height:50px;
+				background-position:0 -50px;
+				text-align:center;
+				font-weight:500;
+				font-size:29px;
+				color:#fff;
+				line-height:46px;
+				position:absolute;
+				top:-25px;
+			}
+			.step-one{
+				left:-25px;
+			}
+			.step-two{
+				left:50%;
+				margin-left:-25px;
+			}
+			.step-three{
+				right:-25px;
+			}
+	}
+	.box-step{
+		background:#8ca320;
+		text-align:center;
+		position:relative;
+			h5{
+				font-size:19px;
+				font-weight:500;
+				color:#fff;
+				padding-top:5px;
+			}
+			p{
+				font-size:13px;
+				color:#fff;
+				padding:0 15px 15px;
+				font-weight:200;
+				margin:0;
+			}
+	}
+	.box-step:after{
+		content:"";
+		position:absolute;
+		border-bottom:10px solid #8ca320;
+		border-right:10px solid transparent; 
+		border-left:10px solid transparent;
+		border-top:0;
+		top:-10px;
+		left:50%;
+		margin-left:-5px;
+	}
+}
+
+/*==========================
+  home-steps End
+============================*/
+
+/*==========================
+  bottom-content Start
+============================*/
+.bottom-content{
+	background:#322c2a;
+	padding:25px 0 55px;
+		h4{
+			font-size:27px;
+			color:#fff;
+			padding:25px 0;
+		}
+		.how-diff{
+			border-right:1px solid #433b38;
+			ul{
+				margin:15px 0 0 10px;
+				li{
+					color:#8ca320;
+					font-size:17px;
+					font-weight:300;
+					padding-left:7px;
+						p{
+							color:#d3ccca;
+						}
+				}
+			}
+		}
+		.testimonial{
+			blockquote{
+				background:url(../img/blockquote-left.png) no-repeat 0 0;
+				padding-left:55px;
+					p{
+						color:#d3ccca;
+						font-size:17px;
+						background:url(../img/blockquote-right.png) no-repeat right bottom;
+						padding-right:40px;
+						padding-bottom:20px;
+						line-height:25px;
+					}
+					cite{
+						color:#8ca320;
+						font-size:17px;
+						font-weight:300;
+							small{
+								color:#79716f;
+							}
+					}
+			}
+		}
+}
+/*==========================
+  bottom-content End
+============================*/
+
+
+/*==========================
+  client Start
+============================*/
+.clients{
+	background:#fff;
+	ul{
+		height:212px;
+		padding:0 0 0 70px;
+ 		background:url(../img/img-as-seen-on.gif) no-repeat 0 center;
+			li{
+				float:left;
+				margin-top:90px;
+				margin-right:40px;
+			}
+	}
+}
+/*==========================
+  client End
+============================*/
+
+/*==========================
+  Footer Start
+============================*/
+.home-footer{
+	.container{
+		border:none;
+	}
+	.icon-top{
+		text-indent:-9999px;
+		margin-top:8px;
+	}
+}
+.footer-menu{
+	li{
+		float:left;
+		margin-right:15px;
+		a{
+			color:#322c2a;
+			font-size:13px;
+				&:hover{
+					color:#000;
+				}
+		}
+	}
+}
+/*==========================
+  Footer End
+============================*/
+
+/*============================================================================
+ Home page End
+==============================================================================*/
+ 
